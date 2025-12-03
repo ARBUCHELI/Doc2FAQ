@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Doc2FAQ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        .description {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .features {
+            text-align: left;
+            margin: 2rem 0;
+        }
+        .features h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+        .features li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .status {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${title}">Doc2FAQ</h1>
+        <p class="subtitle" th:text="${description}">Transform your documents into comprehensive FAQ formats with ease</p>
+        
+        <div class="description">
+            <p>Welcome to Doc2FAQ, an intelligent application that converts your documents into well-structured FAQ formats. 
+            Whether you have technical documentation, user manuals, or knowledge base articles, our application helps you 
+            create accessible and searchable FAQ content.</p>
+        </div>
+
+        <div class="features">
+            <h3>Planned Features:</h3>
+            <ul>
+                <li>Document upload and processing</li>
+                <li>Intelligent question generation</li>
+                <li>FAQ formatting and organization</li>
+                <li>Export capabilities</li>
+                <li>User-friendly interface</li>
+            </ul>
+        </div>
+
+        <div class="status">
+            🚀 Application is running successfully! Ready for development.
+        </div>
+    </div>
+</body>
+</html>
